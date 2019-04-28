@@ -52,7 +52,7 @@ li {
   box-shadow: 0px 0px 5px 0px black;
   background: white;
   border-radius: 10px;
-  transition: 1s ease;
+  transition: 0.5s ease;
 }
 
 .imageContainer {
@@ -64,7 +64,8 @@ li {
 }
 
 .container:hover {
-  transform: scale(1.1);
+  transform: scale(1.01);
+  box-shadow: 0px 0px 10px 0px black;
 }
 
 img {
@@ -80,6 +81,7 @@ h6 {
   font-style: oblique;
   border-bottom: 2px solid black;
   border-top: 2px solid black;
+  font-family: "Pacifico", cursive;
 }
 
 .description {

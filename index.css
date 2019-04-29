@@ -3,41 +3,47 @@
   font-family: "Exo 2", sans-serif;
 }
 
-body {
+#splashPage {
+  background: url(https://images.unsplash.com/photo-1518176258769-f227c798150e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2378&q=80)
+    no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-nav {
-  height: 70px;
-  background: #161b21;
+#splashPage p {
   color: white;
-  font-size: 20px;
+  font-size: 150px;
+  margin-top: 50px;
 }
 
-#row {
-  margin: 0 auto;
+h1 {
+  color: white;
+  padding-bottom: 200px;
+  font-size: 80px;
 }
 
 input {
-  width: 100%;
+  width: 40%;
   height: 40px;
 }
 
-ul {
-  width: 80%;
-  padding-top: 20px;
-}
-
-li {
-  display: inline-block;
-}
-
-.left {
-  float: left;
-}
-
-.right {
-  float: right;
-  margin-right: 20px;
+button {
+  margin-top: 20px;
+  height: 40px;
+  width: 25%;
+  border-radius: 50px;
+  color: white;
+  background: black;
+  border: none;
+  cursor: pointer;
 }
 
 #beerDisplay {
@@ -53,6 +59,7 @@ li {
   background: white;
   border-radius: 10px;
   transition: 0.5s ease;
+  cursor: pointer;
 }
 
 .imageContainer {

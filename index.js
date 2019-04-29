@@ -15,13 +15,25 @@ document.getElementById("searchBtn").addEventListener("click", () => {
                 <h6 class="name">${data[x].name}</h6>
                 <p class="description">${data[x].description}</p>
                 <p class="continue">...</p>
-        
                 <p class="level">Alcohol Level: ${data[x].abv}%</p>
-            </div> `;
+            </div> 
+            <!-- <div class="popup">
+              <div class="popup-text">
+                <h2>Full Description</h2> 
+                <p>${data[x].description}</p>
+              </div>
+              <a class='popup-close' href="#">Close</a>
+            </div> -->
+            `;
 
         x++;
         $("#beerDisplay").append(beerHTML);
       }
+      let container = $(".container");
+      container.on("click", () => {
+        $(".popup").show();
+        console.log("It works!");
+      });
     }
   );
 });
